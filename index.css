@@ -1,0 +1,109 @@
+.index {
+    background-color: #E4E4E4;
+}
+.index header {
+    box-shadow: 0px -1px 10px rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 5rem;
+    margin-top: -7rem;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border-bottom-right-radius: 2rem 5rem;
+    border-bottom-left-radius: 2rem 5rem;
+    position: fixed;
+    z-index: 9999;
+}
+
+.index header img{
+    height: 60%;
+    width: 30%;
+    color: #000000;
+}
+
+.index header h1{
+    height: 100%;
+}
+
+.index main {
+    margin-top: 7rem;
+}
+
+.index main .containTextEncrypt,
+.index main .containTextDecrypt {
+    width: 90%;
+    height: 50vw;
+    margin: 10% 5%;
+    position: relative;
+    background: #DCD6F7;
+    box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+}
+
+.index main .containTextEncrypt input{
+    width: 99%;
+    height: 99%;
+    border: #000000 solid 1px;;
+    background-color: transparent;
+    border-radius: 1rem;
+    background: #DCD6F7;
+    box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.index main .containTextDecrypt{
+    position: relative;
+    border: #000000 solid 1px;
+}
+
+.index main .containTextDecrypt input{
+    height: 98%;
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    ;
+}
+.index main .containTextDecrypt input::-webkit-input-placeholder,
+.index main .containTextEncrypt input::-webkit-input-placeholder{
+    text-align: center;
+    line-height: 10vh;
+    color: rgba(0, 0, 0, 0.573);
+}
+
+.index main .containTextDecrypt img{
+    width: 40%;
+    position: absolute;
+    top: 10vw;
+    right: 5vw;
+}
+
+.index main .containButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.index main .containButton button{
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #424874;
+    border: none;
+    width: 8rem;
+}
+
+.index footer {
+    box-shadow: 0px -1px 10px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border-top-right-radius: 2rem 5rem;
+    border-top-left-radius: 2rem 5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
