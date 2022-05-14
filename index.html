@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logoAlura.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;800&display=swap" rel="stylesheet">
     <link rel="StyleSheet" href="normalize.css"></link>
     <link rel="StyleSheet" href="index.css"></link>
     <title>Encriptador</title>
 </head>
 <body class="index">
     <header>
-        <img src="./images/logoOracleAlura.svg" alt="Not found">
+        <a href="https://www.aluracursos.com/">
+            <img src="./images/logoOracleAlura.svg" alt="Not found">
+        </a>
         <h4>Text encryptor</h4>
     </header>
     <main>
         <div class="containTextEncrypt">
-            <input name="" id="" placeholder="Enter the text here"></input>
+            <textarea name="" id="textToTransform" placeholder="Enter the text here"></textarea>
+            <button class="buttonPaste">Paste</button>
         </div>
         <div class="containTextDecrypt">
-            <input name="" id="" placeholder="No message was found"></input>
-            <img src="./images/Muñeco.svg" alt="Not found">
+            <p id="textResult">No message was found</p>
+            <img src="./images/Muñeco.svg" alt="Not found" id="doll">
+            <button class="buttonCopy">Copy</button>
         </div>
         <div class="containButton">
-            <button>Encrypt</button>
-            <button>Descrypt</button>
+            <button class="buttonOne">Encrypt</button>
+            <button class="buttonTwo">Decrypt</button>
         </div>
     </main>
     <footer>
+        <a href="https://www.linkedin.com/in/angel-guillermo-montania/">Linkedin</a>
         <p>Angel Guillermo Montaña</p>
+        <a href="https://github.com/AngelGuillermoMontania/challenge1-oracleAlura.github.io">Github</a>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

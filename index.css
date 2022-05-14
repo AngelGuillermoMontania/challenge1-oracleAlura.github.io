@@ -6,8 +6,8 @@
     display: flex;
     width: 100%;
     align-items: center;
-    height: 5rem;
-    margin-top: -7rem;
+    height: 12vw;
+    margin-top: -20vw;
     justify-content: space-around;
     background-color: #FFFFFF;
     border-bottom-right-radius: 2rem 5rem;
@@ -16,18 +16,29 @@
     z-index: 9999;
 }
 
-.index header img{
+.index header a{
     height: 60%;
     width: 30%;
-    color: #000000;
+}
+.index header a img{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(6px 6px 2px #0000006d);
 }
 
-.index header h1{
-    height: 100%;
+.index header h4{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    color: transparent;
+    background: #000000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.648);
 }
 
 .index main {
-    margin-top: 7rem;
+    margin-top: 20vw;
 }
 
 .index main .containTextEncrypt,
@@ -39,37 +50,64 @@
     background: #DCD6F7;
     box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
+    border: #000000 solid 1px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
 }
 
-.index main .containTextEncrypt input{
-    width: 99%;
-    height: 99%;
-    border: #000000 solid 1px;;
-    background-color: transparent;
-    border-radius: 1rem;
-    background: #DCD6F7;
-    box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.25);
+.index main .containTextEncrypt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index main .containTextEncrypt textarea {
+    width: 80%;
+    height: 50%;
+    border: none;
+    background: transparent;
     text-align: center;
+    outline: none;
+}
+
+.index main .containTextEncrypt .buttonPaste {
+    width: 4rem;
+    position: absolute;
+    box-shadow: 0px 10px 10px #000000;
+    border: none;
+    bottom: 10vw;
+    right: 5vw;
+    background-color: #424874;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.1rem;
+}
+
+.index main .containTextEncrypt .buttonPaste:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 5px 10px #000000;
+    cursor: pointer;
 }
 
 .index main .containTextDecrypt{
-    position: relative;
-    border: #000000 solid 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.index main .containTextDecrypt input{
-    height: 98%;
-    width: 50%;
+.index main .containTextDecrypt p {
+    height: 80%;
+    width: 60%;
+    max-height: 50vw;
+    margin-left: 2.5%;
     border: none;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    ;
-}
-.index main .containTextDecrypt input::-webkit-input-placeholder,
-.index main .containTextEncrypt input::-webkit-input-placeholder{
-    text-align: center;
-    line-height: 10vh;
-    color: rgba(0, 0, 0, 0.573);
+    color: rgba(0, 0, 0, 0.479)
 }
 
 .index main .containTextDecrypt img{
@@ -79,18 +117,61 @@
     right: 5vw;
 }
 
+.index main .containTextDecrypt .buttonCopy{
+    width: 4rem;
+    position: absolute;
+    box-shadow: 0px 10px 10px #000000;
+    border: none;
+    bottom: 10vw;
+    right: 5vw;
+    background-color: #424874;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.1rem;
+    display: none;
+}
+
+.index main .containTextDecrypt .buttonCopy:hover,
+.index main .containButton button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 5px 10px #000000;
+    cursor: pointer;
+}
+
 .index main .containButton{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    height: 10vw;
+    align-items: center;
 }
 
 .index main .containButton button{
-    border-radius: 1.5rem;
+    border-radius: 0.1rem;
     padding: 0.5rem 1rem;
-    background-color: #424874;
+    box-shadow: 0px 10px 10px #000000 ;
     border: none;
-    width: 8rem;
+    width: 30%;
+    font-size: 1.2em;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    animation: buttons 3s infinite ease-in-out;
+}
+
+@keyframes buttons {
+    0% { padding: 0.5rem 1rem; width: 30%; font-size: 1.2em; border-radius: 0.5rem;}
+    50% { padding: 0.6rem 1rem; width: 37%;font-size: 1.3em; border-radius: 1.5rem;}
+    100% { padding: 0.5rem 1rem; width: 30%;font-size: 1.2em; border-radius: 0.5rem;}
+}
+
+.index main .containButton .buttonOne {
+    background-color: #424874;
+    color: white;
+}
+.index main .containButton .buttonTwo {
+    background-color: #8b8a8a;
+    color: black;
 }
 
 .index footer {
@@ -98,12 +179,101 @@
     display: flex;
     align-items: center;
     height: 2rem;
-    margin-top: 2rem;
+    margin-top: 15vw;
     justify-content: space-around;
     background-color: #FFFFFF;
     border-top-right-radius: 2rem 5rem;
     border-top-left-radius: 2rem 5rem;
-    position: absolute;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: static;
     width: 100%;
     bottom: 0;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+    .index header h4{
+        font-size: 2.5em;
+    }
+
+    .index main .containTextEncrypt,
+    .index main .containTextDecrypt {
+        height: 20vw;
+        margin: 1% 5%;
+    }
+
+    .index main .containTextEncrypt textarea,
+    .index main .containTextDecrypt p {
+        font-size: 2em;
+    }
+
+    .index main .containTextDecrypt p {
+        width: 80%;
+        max-height: 20vw;
+    }
+    
+    
+    .index main .containButton button{
+        border-radius: 2rem;
+        padding: 0.7rem 2rem;
+    }
+
+    @keyframes buttons {
+        0% { padding: 0.7rem 1rem; width: 30%; font-size: 2em;border-radius: 0.8rem;}
+        50% { padding: 1rem 1rem; width: 37%;font-size: 2.2em; border-radius: 2rem;}
+        100% { padding: 0.7rem 1rem; width: 30%;font-size: 2em; border-radius: 0.8rem;}
+    }
+
+    .index main .containTextDecrypt img{
+        top: 2vw;
+        right: 2vw;
+        width: 20%;
+    }
+
+    .index main .containTextDecrypt .buttonCopy,
+    .index main .containTextEncrypt .buttonPaste {
+        bottom: 5vw;   
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .index header {
+        margin-top: -12vw;
+        height: 8vw;
+    }
+
+    .index main {
+        margin-top: 12vw;
+    }
+
+    .index main .containTextEncrypt,
+    .index main .containTextDecrypt {
+        height: 10vw;
+        margin: 1% 5%;
+    }
+
+    .index main .containTextDecrypt p {
+        max-height: 10vw;
+    }
+
+    .index main .containTextDecrypt img{
+        top: 1vw;
+        right: 2vw;
+        width: 10vw;
+    }
+
+    .index footer {
+        margin-top: 7rem
+    }
+
+    .index main .containTextDecrypt .buttonCopy,
+    .index main .containTextEncrypt .buttonPaste{
+        bottom: 2vw;   
+    }
+
 }
