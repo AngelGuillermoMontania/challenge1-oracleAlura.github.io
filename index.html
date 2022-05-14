@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logoAlura.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;800&display=swap" rel="stylesheet">
@@ -13,16 +14,19 @@
 </head>
 <body class="index">
     <header>
-        <img src="./images/logoOracleAlura.svg" alt="Not found">
+        <a href="https://www.aluracursos.com/">
+            <img src="./images/logoOracleAlura.svg" alt="Not found">
+        </a>
         <h4>Text encryptor</h4>
     </header>
     <main>
         <div class="containTextEncrypt">
-            <textarea name="" id="" placeholder="Enter the text here"></textarea>
+            <textarea name="" id="textToTransform" placeholder="Enter the text here"></textarea>
+            <button class="buttonPaste">Paste</button>
         </div>
         <div class="containTextDecrypt">
-            <p>No message was found</p>
-            <img src="./images/Muñeco.svg" alt="Not found">
+            <p id="textResult">No message was found</p>
+            <img src="./images/Muñeco.svg" alt="Not found" id="doll">
             <button class="buttonCopy">Copy</button>
         </div>
         <div class="containButton">
