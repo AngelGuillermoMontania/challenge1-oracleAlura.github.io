@@ -79,7 +79,7 @@ window.addEventListener("load", () => {
     const $buttonCopy = qs(".buttonCopy")
     const $buttonPaste = qs(".buttonPaste")
     const $doll = qs("#doll")
-    const $containTextDecrypt = qs(".containTextDecrypt")
+    const $containResult = qs(".containResult")
 
     if ($textResult.innerText === "No message was found") $buttonCopy.style.display = "none"
 
@@ -90,7 +90,7 @@ window.addEventListener("load", () => {
         console.log($textResult.style.width)
         $buttonCopy.style.display = "block";
         $doll.style.display = "none"
-        $containTextDecrypt.style.justifyContent = "center"
+        $containResult.style.justifyContent = "center"
     })
 
     $buttonDecrypt.addEventListener("click", () => {
