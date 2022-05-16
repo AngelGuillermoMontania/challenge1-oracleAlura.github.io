@@ -193,6 +193,18 @@
     font-weight: 600;
 }
 
+.index footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index footer a svg{
+    width: 1.5rem;
+    margin: 0.2rem 0.5rem;
+    color: #424874;
+}
+
 @media (min-width: 768px) {
 
     .index header h4{
