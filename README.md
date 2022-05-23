@@ -5,13 +5,18 @@ Run **Live Server** or similar in the corresponding html
 
 ### Images
 
-#### Desktop
-![Desktop](./Preview/Desktop.png) ![DesktopEnc](./Preview/DesktopEnc.png)
+##### Desktop
+![Desktop](./extra/ScreenShots/Desktop.png) ![DesktopEnc](./extra/ScreenShots/DesktopEnc.png)
 
 
-#### Tablet
-![Tablet](./Preview/Tablet.png)
+##### Tablet
+![Tablet](./extra/ScreenShots/Tablet.png)
 
 
-#### Mobile
-![Mobile](./Preview/Mobile.png)
+##### Mobile
+![Mobile](./extra/ScreenShots/Mobile.png)
+
+
+
+### [Figma](./extra/Figma/DesignFigma.pdf)
+
