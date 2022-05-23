@@ -1,41 +1,46 @@
-# challenge-oracle-one.gihub.io
+# **[Challenge-oracle-one](https://angelguillermomontania.github.io/challenge1-oracleAlura.github.io/)**
 
-## recommendation: 
+## **Recommendation:** 
 Run **Live Server** or similar in the corresponding html
 
-### Una aplicación que encripta textos.
+### **An application that encrypts texts.**
 
-Las "llaves" de encriptación que utilizaremos son las siguientes:
 
-`La letra "e" es convertida para "enter"`
-`La letra "i" es convertida para "imes"`
-`La letra "a" es convertida para "ai"`
-`La letra "o" es convertida para "ober"`
-`La letra "u" es convertida para "ufat"`
+The encryption "keys" that we will use are the following:
 
-**Requisitos:**
-- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original. 
+`The letter "e" is converted to "enter"`
+`The letter "i" is converted to "imes"`
+`The letter "a" is converted to "ai"`
+`The letter "o" is converted to "ober"`
+`The letter "u" is converted to "ufat"`
 
-Por ejemplo:
+**Requirements:**
+- It should be possible to convert a word to the encrypted version as well as return an encrypted word to its original version. 
+
+Example:
 `"gato" => "gaitober"`
 `gaitober" => "gato"`
 
-- La página debe tener campos para 
-inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-- El resultado debe ser mostrado en la pantalla.
+- The page must have fields for
+insertion of the text to be encrypted or decrypted, and the user must be able to choose between the two options.
+- The result should be displayed on the screen.
 
-**Extras:**
-- Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del `ctrl+C` o de la opción "copiar" del menú de las aplicaciones.
+**Additional features:**
+- A button that copies the encrypted/decrypted text for the transfer section, i.e. has the same functionality as `ctrl+C` or the "copy" option in the applications menu.
 
-### Images
+## **Images**
 
-#### Desktop
-![Desktop](./Preview/Desktop.png) ![DesktopEnc](./Preview/DesktopEnc.png)
-
-
-#### Tablet
-![Tablet](./Preview/Tablet.png)
+**Desktop**
+![Desktop](./extra/ScreenShots/Desktop.png) ![DesktopEnc](./extra/ScreenShots/DesktopEnc.png)
 
 
-#### Mobile
-![Mobile](./Preview/Mobile.png)
+**Tablet**
+![Tablet](./extra/ScreenShots/Tablet.png)
+
+
+**Mobile**
+![Mobile](./extra/ScreenShots/Mobile.png)
+
+
+
+### [Figma](./extra/Figma/DesignFigma.pdf)
